@@ -10,23 +10,31 @@ package com.mycompany.estudiante;
  */
 public class Grupo {
     
-    private int idGrupo;
+    private int id;
     private int idProfesor;
     private int idMateria;
     private int cantidadEstudiantes;
-
-    /**
-     * @return the idGrupo
-     */
-    public int getIdGrupo() {
-        return idGrupo;
+    
+    public Grupo(int id, int idProfesor, int idMateria, int cantidadEstudiantes){
+        
+        this.id= id;
+        this.idProfesor= idProfesor;
+        this.idMateria= idMateria;
+        this.cantidadEstudiantes= cantidadEstudiantes;
     }
 
     /**
-     * @param idGrupo the idGrupo to set
+     * @return the id
      */
-    public void setIdGrupo(int idGrupo) {
-        this.idGrupo = idGrupo;
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

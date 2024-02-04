@@ -10,22 +10,29 @@ package com.mycompany.estudiante;
  */
 public class Materia {
     
-    private int idMateria;
+    private int id;
     private String nombre;
     private int grupo;
-
-    /**
-     * @return the idMateria
-     */
-    public int getIdMateria() {
-        return idMateria;
+    
+    public Materia(int id, String nombre, int grupo){
+        
+        this.id= id;
+        this.nombre= nombre;
+        this.grupo= grupo;
     }
 
     /**
-     * @param idMateria the idMateria to set
+     * @return the id
      */
-    public void setIdMateria(int idMateria) {
-        this.idMateria = idMateria;
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

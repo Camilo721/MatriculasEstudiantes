@@ -10,24 +10,33 @@ package com.mycompany.estudiante;
  */
 public class Profesor {
     
-    private int idProfesor;
+    private int id;
     private String nombreProfesor;
     private String apellidoProfesor;
     private String generoProfesor;
     private String area;
-
-    /**
-     * @return the idProfesor
-     */
-    public int getIdProfesor() {
-        return idProfesor;
+    
+    public Profesor(int id, String nombreProfesor, String apellidoProfesor, String generoProfesor, String area){
+        
+        this.id= id;
+        this.nombreProfesor= nombreProfesor;
+        this.apellidoProfesor= apellidoProfesor;
+        this.generoProfesor= generoProfesor;
+        this.area= area;
     }
 
     /**
-     * @param idProfesor the idProfesor to set
+     * @return the id
      */
-    public void setIdProfesor(int idProfesor) {
-        this.idProfesor = idProfesor;
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

@@ -10,28 +10,28 @@ package com.mycompany.estudiante;
  */
 public class Matricula {
     
-    private int idMatricula;
+    private int id;
     private int idEstudiante;
     
     public Matricula(int id, int idEstudiante){
         
-        this.idMatricula=id;
+        this.id=id;
         this.idEstudiante=idEstudiante;
     }
             
 
     /**
-     * @return the idMatricula
+     * @return the id
      */
-    public int getIdMatricula() {
-        return idMatricula;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param idMatricula the idMatricula to set
+     * @param id the id to set
      */
-    public void setIdMatricula(int idMatricula) {
-        this.idMatricula = idMatricula;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

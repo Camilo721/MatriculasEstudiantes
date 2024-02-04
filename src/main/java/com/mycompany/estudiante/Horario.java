@@ -10,23 +10,31 @@ package com.mycompany.estudiante;
  */
 public class Horario {
     
-    private int idHorario;
+    private int id;
     private int idMateria;
     private int idSalon;
     private String dia;
-
-    /**
-     * @return the idHorario
-     */
-    public int getIdHorario() {
-        return idHorario;
+    
+    public Horario(int id, int idMateria, int idSalon, String dia){
+        
+        this.id= id;
+        this.idMateria= idMateria;
+        this.idSalon= idSalon;
+        this.dia= dia;
     }
 
     /**
-     * @param idHorario the idHorario to set
+     * @return the id
      */
-    public void setIdHorario(int idHorario) {
-        this.idHorario = idHorario;
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

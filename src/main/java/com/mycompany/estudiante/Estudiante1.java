@@ -10,23 +10,32 @@ package com.mycompany.estudiante;
  */
 public class Estudiante1 {
     
-    private int idEstudiante;
+    private int id;
     private String nombreEstudiante;
     private String apellidoEstudiante;
     private String generoEstudiante;
+    
+    
+    public Estudiante1 (int id, String nombreEstudiante, String apellidoEstudiante, String generoEstudiante){
+        
+        this.id= id;
+        this.nombreEstudiante= nombreEstudiante;
+        this.apellidoEstudiante= apellidoEstudiante;
+        this.generoEstudiante= generoEstudiante;
+    }
 
     /**
      * @return the idEstudiante
      */
     public int getIdEstudiante() {
-        return idEstudiante;
+        return id;
     }
 
     /**
      * @param idEstudiante the idEstudiante to set
      */
     public void setIdEstudiante(int idEstudiante) {
-        this.idEstudiante = idEstudiante;
+        this.id = idEstudiante;
     }
 
     /**
