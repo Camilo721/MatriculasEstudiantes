@@ -11,15 +11,11 @@ package com.mycompany.estudiante;
 public class Grupo {
     
     private int id;
-    private int idProfesor;
-    private int idMateria;
     private int cantidadEstudiantes;
     
-    public Grupo(int id, int idProfesor, int idMateria, int cantidadEstudiantes){
+    public Grupo(int id, int cantidadEstudiantes){
         
         this.id= id;
-        this.idProfesor= idProfesor;
-        this.idMateria= idMateria;
         this.cantidadEstudiantes= cantidadEstudiantes;
     }
 
@@ -38,34 +34,6 @@ public class Grupo {
     }
 
     /**
-     * @return the idProfesor
-     */
-    public int getIdProfesor() {
-        return idProfesor;
-    }
-
-    /**
-     * @param idProfesor the idProfesor to set
-     */
-    public void setIdProfesor(int idProfesor) {
-        this.idProfesor = idProfesor;
-    }
-
-    /**
-     * @return the idMateria
-     */
-    public int getIdMateria() {
-        return idMateria;
-    }
-
-    /**
-     * @param idMateria the idMateria to set
-     */
-    public void setIdMateria(int idMateria) {
-        this.idMateria = idMateria;
-    }
-
-    /**
      * @return the cantidadEstudiantes
      */
     public int getCantidadEstudiantes() {
@@ -78,4 +46,6 @@ public class Grupo {
     public void setCantidadEstudiantes(int cantidadEstudiantes) {
         this.cantidadEstudiantes = cantidadEstudiantes;
     }
+
+  
 }

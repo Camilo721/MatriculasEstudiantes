@@ -12,14 +12,13 @@ public class Horario {
     
     private int id;
     private int idMateria;
-    private int idSalon;
     private String dia;
     
     public Horario(int id, int idMateria, int idSalon, String dia){
         
         this.id= id;
         this.idMateria= idMateria;
-        this.idSalon= idSalon;
+  
         this.dia= dia;
     }
 
@@ -54,16 +53,7 @@ public class Horario {
     /**
      * @return the idSalon
      */
-    public int getIdSalon() {
-        return idSalon;
-    }
-
-    /**
-     * @param idSalon the idSalon to set
-     */
-    public void setIdSalon(int idSalon) {
-        this.idSalon = idSalon;
-    }
+   
 
     /**
      * @return the dia
